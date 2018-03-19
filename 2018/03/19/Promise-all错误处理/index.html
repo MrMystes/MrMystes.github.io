@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Promise.all Promise," />
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="JavaScript相关的博客文章">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Mystes&#39;s Blog">
-<meta property="og:url" content="http://localhost:4000/index.html">
+<meta name="description" content="Promise.all错误处理​     最近再stackoverflow上学习了一种promise.all的错误处理方式。 ​     首先简单介绍promise.all的机制。 ​     promise.all是一扇门，只有当所有的promise的状态都resolved，promise.all才会fulfilled，只要有第一个promise的状态变成reject，那么promise.all">
+<meta name="keywords" content="Promise.all Promise">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Promise.all错误处理">
+<meta property="og:url" content="http://localhost:4000/2018/03/19/Promise-all错误处理/index.html">
 <meta property="og:site_name" content="Mystes&#39;s Blog">
-<meta property="og:description" content="JavaScript相关的博客文章">
+<meta property="og:description" content="Promise.all错误处理​     最近再stackoverflow上学习了一种promise.all的错误处理方式。 ​     首先简单介绍promise.all的机制。 ​     promise.all是一扇门，只有当所有的promise的状态都resolved，promise.all才会fulfilled，只要有第一个promise的状态变成reject，那么promise.all">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-03-19T01:44:01.464Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mystes&#39;s Blog">
-<meta name="twitter:description" content="JavaScript相关的博客文章">
+<meta name="twitter:title" content="Promise.all错误处理">
+<meta name="twitter:description" content="Promise.all错误处理​     最近再stackoverflow上学习了一种promise.all的错误处理方式。 ​     首先简单介绍promise.all的机制。 ​     promise.all是一扇门，只有当所有的promise的状态都resolved，promise.all才会fulfilled，只要有第一个promise的状态变成reject，那么promise.all">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://localhost:4000/"/>
+  <link rel="canonical" href="http://localhost:4000/2018/03/19/Promise-all错误处理/"/>
 
 
 
 
 
-  <title>Mystes's Blog</title>
+  <title>Promise.all错误处理 | Mystes's Blog</title>
   
 
 
@@ -153,8 +155,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -257,9 +258,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -289,9 +290,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/19/Promise-all错误处理/" itemprop="url">Promise.all错误处理</a></h1>
+          <h1 class="post-title" itemprop="name headline">Promise.all错误处理</h1>
         
 
         <div class="post-meta">
@@ -323,133 +322,10 @@
           
 
           
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          Promise.all错误处理​     最近再stackoverflow上学习了一种promise.all的错误处理方式。
-​     首先简单介绍promise.all的机制。
-​     promise.all是一扇门，只有当所有的promise的状态都resolved，promise.all
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/19/Promise-all错误处理/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2018/01/26/bookApi/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Mystes">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mystes's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/26/bookApi/" itemprop="url">追书神器API分析</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-26T10:40:24+08:00">
-                2018-01-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>本文阅读总量
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
           
 
           
@@ -469,20 +345,14 @@
       
 
       
-        
-          
-          追书神器api分析搜索书籍  5702151c1c8e4db9483762d6GET http://api.zhuishushenqi.com/book/fuzzy-search?query={bookname}&amp;start=0&amp;limit=100
-返回值
-1234567891011
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/01/26/bookApi/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <h2 id="Promise-all错误处理"><a href="#Promise-all错误处理" class="headerlink" title="Promise.all错误处理"></a>Promise.all错误处理</h2><p>​     最近再stackoverflow上学习了一种promise.all的错误处理方式。</p>
+<p>​     首先简单介绍promise.all的机制。</p>
+<p>​     promise.all是一扇门，只有当所有的promise的状态都resolved，promise.all才会fulfilled，只要有第一个promise的状态变成reject，那么promise.all就会rejected，并且其他所有promise的状态都会被抛弃。</p>
+<p>​     这里就会导致一个问题，我们无法得知所有promise的执行状态，无法对其进行错误处理。</p>
+<p>​     因此这里引入一个reflect反射函数，来包装我们的promise对象</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">reflect</span>(<span class="params">promise</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> promise.then(<span class="function"><span class="params">value</span>=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      value:value,</span><br><span class="line">      status:<span class="string">'resolved'</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;).catch(<span class="function"><span class="params">err</span>=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      err:err,</span><br><span class="line">      status:<span class="string">'rejected'</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line">promiseArr <span class="comment">// 假定有一个promise数组</span></span><br><span class="line"><span class="built_in">Promise</span>.all(promiseArr.map(<span class="function"><span class="params">p</span>=&gt;</span>reflect(p)))</span><br><span class="line">  .then(<span class="function"><span class="params">status</span>=&gt;</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(status)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>​     通过<code>reflect</code>函数，将<code>promise</code>的执行状态返回给<code>Promise.all</code>，由于返回值是普通对象，不是<code>promise</code>对象，不属于异步操作，<code>Promise.all</code> 实例的状态不会因为某一个<code>promise</code>状态变成<code>rejected</code>而改变，一直都是<code>resolved</code>。最后再<code>Promise.all</code>的then()中可以查看到所有<code>promise</code>的执行状态。</p>
+
       
     </div>
     
@@ -492,145 +362,65 @@
     
 
     
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>请Mystes喝杯咖啡</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Mystes 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
 
     
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2018/01/22/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Mystes">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mystes's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/22/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-22T15:57:12+08:00">
-                2018-01-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/Promise-all-Promise/" rel="tag"># Promise.all Promise</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/01/22/hello-world/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/01/26/bookApi/" rel="next" title="追书神器API分析">
+                <i class="fa fa-chevron-left"></i> 追书神器API分析
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -640,10 +430,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -651,6 +442,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zMzU3OS8xMDEzNA=="></div>
+    </div>
+
+  
+
+
 
 
         </div>
@@ -672,8 +472,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -758,6 +567,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Promise-all错误处理"><span class="nav-number">1.</span> <span class="nav-text">Promise.all错误处理</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -914,6 +739,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
